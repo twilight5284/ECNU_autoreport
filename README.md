@@ -3,11 +3,11 @@
 ## 开发说明：疫情打卡已经持续一年多，每天手动打卡非常麻烦，而且会经常忘记，不得不麻烦辅导员和监督助理，千里寻人来打卡。本人身体健康，基本不出差，且常年待在闵行校区，遂开发每天自动打卡，图个方便。如果有出行计划，请停止自动打卡，严格遵守学校打卡规范。
 
 ## 技术实现：
-            收集微信小程序登录所需的params(open_key, iv, data);
-            用requests.get获取MiniToken作为下一步的headers；
-            用requests.put发送包含打卡信息的json；
-            用Server酱发送微信通知(需要注册并关联微信);
-            用Github Action实现每日自动打卡
+1. 收集微信小程序登录所需的params(open_key, iv, data);
+2. 用requests.get获取MiniToken作为下一步的headers；
+3. 用requests.put发送包含打卡信息的json；
+4. 用Server酱发送微信通知(需要注册并关联微信);
+5. 用Github Action实现每日自动打卡
 
 ## 使用说明：
 1. 安装Fiddler Everywhere工具（Free），对电脑微信客户端中的打卡小程序进行抓包，获取打卡小程序（https://anti-epidemic.ecnu.edu.cn/clock/mini/wx） 登录时所需的params(open_key, iv, data)。打开关闭重复几次，open_key是不变的，iv和data是变化，获取几组对应的数据（代码中是四组）；
