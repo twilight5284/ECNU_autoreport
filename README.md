@@ -10,12 +10,12 @@
 5. 用Github Action实现每日自动打卡
 
 ## 使用说明：
-1. 安装Fiddler Everywhere工具（Free），对电脑微信客户端中的打卡小程序进行抓包，获取打卡小程序（https://anti-epidemic.ecnu.edu.cn/clock/mini/wx） 登录时所需的params(open_key, iv, data)。打开关闭打卡小程序界面重复几次，open_key是不变的，iv和data是变化，获取几组对应的数据（代码中是四组）；
+1. 安装Fiddler Everywhere工具（Free），对电脑微信客户端中的打卡小程序进行抓包，获取打卡小程序（https://anti-epidemic.ecnu.edu.cn/clock/mini/wx） 登录时所需的params(open_key, iv, data)。重复打开关闭打卡小程序界面几次，open_key是不变的，iv和data是变化，获取几组对应的value（代码中是四组）；
 
 ![fiddler](https://user-images.githubusercontent.com/58336082/113386639-432c2280-93bd-11eb-902c-282011928cf2.jpg)
 ![fiddler2](https://user-images.githubusercontent.com/58336082/113386643-43c4b900-93bd-11eb-87d8-74b9e9f4f4c7.jpg)
 
-2. 使用Fiddler Everywhere工具，对电脑微信客户端中的打卡小程序进行抓包，获取微信打卡的Token。用小程序打卡成功后，查看打卡页面（https://anti-epidemic.ecnu.edu.cn/clock/mini/record） 的request的body信息，获得token；
+2. 使用Fiddler Everywhere工具，对电脑微信客户端中的打卡小程序进行抓包，获取微信打卡的token。用小程序打卡成功后，查看打卡页面（https://anti-epidemic.ecnu.edu.cn/clock/mini/record） 的request的body信息，获得token；
 
 ![fiddler3](https://user-images.githubusercontent.com/58336082/113388742-5b9e3c00-93c1-11eb-811d-c2f3ca58d48a.jpg)
 
