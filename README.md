@@ -26,7 +26,7 @@
 
 5. 在线修改ECNU.py，根据代码中的说明指示填补open_key, iv, data, number（学号）, token, sckey的值；
 
-6. 将github_action.txt文件内容复制到github action的workflow的main.yml文件中，实现自动打卡（每日8:30）；
+6. 将github_action.txt文件内容复制到github action的workflow的main.yml文件中，实现自动打卡（每日8:00和9:00）；
 
 ## License
 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。
