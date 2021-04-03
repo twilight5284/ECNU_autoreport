@@ -101,6 +101,5 @@ def ECNU_autoreport():
 
 
 if __name__ == "__main__":
-        i = random.randint(1, 4)
-        time.sleep(i * 55)
+        time.sleep(30)
         ECNU_autoreport()
