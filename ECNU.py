@@ -87,7 +87,7 @@ def ECNU_autoreport():
     body3 = requests.put(url=url2,headers = headers2,json=body2)
     # 获取返回的信息
     message = body3.json()["message"]
-    if message == 'ok' :
+    if message in ['ok','Ok','OK']:
         result = '主人，打卡成功咯'
     elif message == '今日已打卡':
         result = '主人，已经打卡咯'
