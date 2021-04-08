@@ -34,9 +34,7 @@ def get_MiniToken():
         ""
     ]
     # 引号中填入对应的openkey值
-    openkeys = [
-        ""
-    ]
+    openkeys = ""
     # 随机选取iv和data
     n = random.randint(0, 3)
     params1 = {
