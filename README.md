@@ -28,5 +28,8 @@
 
 6. 新建github action的workflow的文件，将github_action.txt文件内容复制到yml文件中，实现自动打卡（每日8:00和9:00）；
 
+## 参考
+https://github.com/Neoyanghc/Tongji_Covid19_Autoclock
+
 ## License
 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。
