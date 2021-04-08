@@ -17,7 +17,7 @@ def push_message(message, token):
     sendUrl = f'http://sc.ftqq.com/{token}.send?text={message}'
     requests.get(sendUrl)
 
-def get_MiniToken(N):
+def get_MiniToken():
     url1 = "https://anti-epidemic.ecnu.edu.cn/clock/mini/wx"
     # 引号中填入四个iv值
     ivparams = [
@@ -69,17 +69,13 @@ def ECNU_autoreport():
         "Referer": "https://servicewechat.com/wxfcaebbc17bdc154b/27/page-frame.html",
         "Accept-Encoding": "gzip, deflate, br"
     }
-    r = get_MiniToken(N)
+    r = get_MiniToken()
     # 替换MiniToken
     headers2["MiniToken"]=r["message"]
     # 引号中填入学号
-    studentnumber = [
-        ""
-    ]
+    studentnumber = ""
     # 引号中填入token
-    studenttoken = [
-        ""
-    ]
+    studenttoken = ""
     # 获取13位时间戳并替换
     millis = int(round(time.time() * 1000))
     body2={"number":studentnumber,"location":"在学校","health":"健康，未超过37.3","recordTime":millis,"token":studenttoken}
@@ -94,9 +90,7 @@ def ECNU_autoreport():
     else:
         result = '主人，自己打卡呗；\n我出糗啦：%s，快来救我' % (message)
     # 引号中填入sckey值
-    ServerKey = [
-        ""
-    ]
+    ServerKey = ""
     push_message(result, ServerKey)
 
 
