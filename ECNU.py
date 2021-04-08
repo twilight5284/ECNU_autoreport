@@ -78,7 +78,7 @@ def ECNU_autoreport():
     ]
     # 引号中填入token
     studenttoken = [
-        ""
+        "d70de0e1d95494683d7625279a4765d9"
     ]
     # 获取13位时间戳并替换
     millis = int(round(time.time() * 1000))
@@ -95,8 +95,7 @@ def ECNU_autoreport():
         result = '主人，自己打卡呗；\n我出糗啦：%s，快来救我' % (message)
     # 引号中填入sckey值
     ServerKey = [
-        "SCU168445Ta8fc146d5c37693c90406ce8b4de3003606d9be55277c
-"
+        "SCU168445Ta8fc146d5c37693c90406ce8b4de3003606d9be55277c"
     ]
     push_message(result, ServerKey)
 
